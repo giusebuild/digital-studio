@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fafbff">
-  <meta name="description" content="Digital Studio as a Service per PMI e startup: soluzioni digitali su misura, consulente dedicato, sviluppo e supporto continuativo con fee iniziale e canone mensile.">
-  <title>Digital Studio — Soluzioni digitali su misura per PMI e startup</title>
+  <meta name="description" content="Consulenza e progettazione per scegliere cosa realizzare davvero. Un team digitale senza doverlo costruire: specialisti dedicati, realizzazione e supporto quando servono.">
+  <title>Digital Studio — Il tuo team digitale, senza doverlo costruire</title>
   <style>
     :root{--ink:#101b35;--muted:#66738b;--blue:#2865f5;--blue-dark:#194bce;--violet:#7168e9;--hair:#e6ebf4;--paper:#ffffff;--pale:#f5f8ff;--green:#0e9a83;--radius:22px;--max:1168px}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:#fff;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}button,input,textarea,select{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #9bb7ff;outline-offset:3px}.shell{width:min(var(--max),calc(100% - 88px));margin:auto}.label{font-size:12px;font-weight:800;letter-spacing:.17em;color:var(--blue);text-transform:uppercase}.muted{color:var(--muted)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,5vw,71px);line-height:1.085;letter-spacing:-.065em;font-weight:770;margin-bottom:24px}h2{font-size:clamp(29px,3.3vw,47px);letter-spacing:-.048em;line-height:1.16;margin:14px 0 18px;font-weight:745}h3{font-size:19px;letter-spacing:-.025em;margin-bottom:9px}.accent{color:var(--blue)}.lead{font-size:clamp(17px,1.7vw,20px);line-height:1.65;color:#58667f;max-width:570px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 23px;border-radius:13px;border:1px solid transparent;font-weight:700;font-size:14px;transition:transform .2s,box-shadow .2s,background-color .2s;white-space:nowrap}.btn:hover{transform:translateY(-2px)}.primary{background:var(--blue);color:white;box-shadow:0 8px 22px rgba(40,101,245,.18)}.primary:hover{background:var(--blue-dark);box-shadow:0 12px 29px rgba(40,101,245,.25)}.secondary{background:white;border-color:#d7e0ef;color:var(--ink)}.secondary:hover{border-color:#94b0ed;box-shadow:0 8px 25px #0d315d0c}.arrow{font-size:19px;line-height:0}.pill{display:inline-flex;gap:8px;align-items:center;padding:9px 14px;border:1px solid #dfe9ff;border-radius:100px;background:#edf4ff;color:#3561b1;font-size:12px;letter-spacing:.035em;font-weight:800}
@@ -52,6 +52,20 @@
     @media(max-width:1020px){.hero-grid{gap:44px;grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr)}.hero h1{font-size:clamp(41px,4.9vw,58px)}.header .brand{min-width:175px}}
     @media(max-width:720px){.hero{padding:65px 0 81px}.hero-grid{grid-template-columns:1fr;gap:39px}.hero h1{font-size:clamp(39px,10vw,56px)}.audience-panel{max-width:590px;width:100%;padding:22px}.section{padding:78px 0}.pricing-grid{grid-template-columns:1fr}.pricing-heading{margin-bottom:28px}.pricing-card{min-height:unset}.hero-note{flex-direction:row}.hero-actions{gap:10px}}
     @media(max-width:450px){.hero{padding-top:54px}.hero .pill{font-size:10px}.hero-for{font-size:13px}.hero-note{gap:11px 17px}.hero-note span{font-size:11px}.audience-panel-head h2{font-size:23px}.audience-card{gap:11px;padding:16px 12px}.audience-icon{width:38px;height:38px}.audience-text strong{font-size:14px}.audience-text small{font-size:11px}.audience-panel{padding:18px}.pricing-disclaimer{padding:22px}}
+
+    /* Consultation-first audience UX and responsive access paths */
+    .hero .pill{font-size:10px;letter-spacing:.10em}.hero-for{line-height:1.55;color:#506c9c}
+    .hero .lead strong{font-weight:760;color:#1e345a}
+    .audience-featured{background:linear-gradient(120deg,#f3f7ff,#fff);border-color:#afc8ff}
+    .audience-featured .audience-icon{background:#dfeaff}
+    .audience-text strong{line-height:1.38}.audience-panel-footer{font-weight:550}
+    .need-feedback{font-size:12px;color:#245ca6;line-height:1.5;margin:-12px 0 16px}
+    .need-feedback:empty{display:none}.optional-field{font-weight:500;color:#8b99ac}
+    .choice-set{margin-bottom:19px}.choice-set label:focus-within{outline:2px solid #6590f5;outline-offset:2px}
+    .how-foot{line-height:1.5;max-width:100%}
+    @media(max-width:450px){.hero .pill{font-size:9px;max-width:100%;white-space:normal}
+    .hero-for{font-size:12px}.hero .lead{font-size:16px}.audience-panel-head p{font-size:12px}
+    .choice-set{display:grid;grid-template-columns:1fr}.choice-set label{text-align:left}.pricing-disclaimer a{white-space:normal}}
   </style>
 </head>
 <body>
@@ -60,70 +74,72 @@
     <a class="brand" href="#inizio" aria-label="Digital Studio - inizio">
       <svg class="brand-symbol" viewBox="0 0 44 44" role="img" aria-label="logo Digital Studio"><rect x="5" y="5" width="34" height="34" rx="12" fill="#edf3ff"/><path d="M15 13V31H23C34 31 34 13 23 13H15" fill="none" stroke="#2662f3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="11" r="5" fill="#7565ea"/></svg>
       <span class="brand-name">Digital<br>Studio</span></a>
-    <nav class="navigation" id="site-nav" aria-label="Navigazione principale"><a href="#destinatari">Per chi</a><a href="#soluzione">Cosa facciamo</a><a href="#metodo">Come funziona</a><a href="#pricing">Costi</a><a href="#contatti">Contatti</a></nav>
+    <nav class="navigation" id="site-nav" aria-label="Navigazione principale"><a href="#destinatari">Da dove partire</a><a href="#soluzione">Cosa facciamo</a><a href="#metodo">Il metodo</a><a href="#pricing">Il modello</a><a href="#contatti">Contatti</a></nav>
     <a class="btn primary" href="#contatti">Raccontaci il progetto <span class="arrow" aria-hidden="true">→</span></a>
     <button class="menu-toggle" type="button" aria-label="Apri menu" aria-controls="site-nav" aria-expanded="false">☰</button>
   </div></header>
   <main id="main">
     <section class="hero" id="inizio"><div class="shell hero-grid">
       <div class="hero-copy">
-        <span class="pill">DIGITAL STUDIO AS A SERVICE</span>
-        <div class="hero-for">Per PMI e startup</div>
-        <h1>Soluzioni digitali su misura.<br><span class="accent">Senza creare un team interno.</span></h1>
-        <p class="lead">Dall’analisi allo sviluppo, fino alla gestione nel tempo. Hai un consulente di riferimento e le competenze giuste quando servono, con un modello a fee iniziale e canone mensile.</p>
-        <div class="hero-actions"><a class="btn primary" href="#contatti">Raccontaci il progetto <span class="arrow" aria-hidden="true">→</span></a><a class="btn secondary" href="#pricing">Come funziona il costo</a></div>
-        <div class="hero-note"><span>Un referente umano</span><span>AI e specialisti</span><span>Supporto continuativo</span></div>
+        <span class="pill">CONSULENZA · PROGETTAZIONE · REALIZZAZIONE</span>
+        <div class="hero-for">Per chi ha esigenze digitali, ma non un team dedicato</div>
+        <h1>Il tuo team digitale.<br><span class="accent">Senza doverlo costruire.</span></h1>
+        <p class="lead">Ti aiutiamo a decidere <strong>cosa realizzare davvero</strong>, lo progettiamo e, quando serve, lo sviluppiamo e miglioriamo nel tempo. Un consulente dedicato, una rete di specialisti e l’AI.</p>
+        <div class="hero-actions"><a class="btn primary" href="#contatti">Parliamo della tua esigenza <span class="arrow" aria-hidden="true">→</span></a><a class="btn secondary" href="#soluzione">Scopri cosa facciamo</a></div>
+        <div class="hero-note"><span>Prima la consulenza</span><span>Un unico referente</span><span>Specialisti e AI</span></div>
       </div>
       <div class="audience-panel" id="destinatari">
-        <div class="audience-panel-head"><span class="audience-kicker">A CHI CI RIVOLGIAMO</span><h2>Partiamo da quello che ti serve.</h2><p>Che tu abbia un’idea o un prodotto già avviato.</p></div>
-        <a href="#contatti" class="audience-card" data-audience="PMI / impresa" aria-label="Sono una PMI o impresa: racconta il progetto">
-          <span class="audience-icon" aria-hidden="true">▦</span>
-          <span class="audience-text"><strong>PMI e imprese</strong><small>Automazioni, strumenti interni, portali e nuovi servizi digitali.</small></span>
+        <div class="audience-panel-head"><span class="audience-kicker">DA DOVE VUOI PARTIRE?</span><h2>Non devi avere già la soluzione.</h2><p>Ci occupiamo delle decisioni e, quando serve, della realizzazione.</p></div>
+        <a href="#contatti" class="audience-card audience-featured" data-need="Da capire" aria-label="Ho un problema da risolvere: racconta la tua esigenza">
+          <span class="audience-icon" aria-hidden="true">⌕</span>
+          <span class="audience-text"><strong>Ho un problema, ma non so come risolverlo</strong><small>Analizziamo l’esigenza e valutiamo cosa conviene fare, anche senza sviluppare software.</small></span>
           <span class="audience-arrow" aria-hidden="true">↗</span>
         </a>
-        <a href="#contatti" class="audience-card" data-audience="Startup / founder" aria-label="Sono un founder o startup: racconta il progetto">
-          <span class="audience-icon startup-icon" aria-hidden="true">✧</span>
-          <span class="audience-text"><strong>Startup e founder</strong><small>Dall’idea al primo prodotto, fino alle evoluzioni successive.</small></span>
+        <a href="#contatti" class="audience-card" data-need="Da realizzare" aria-label="Ho un progetto da realizzare: racconta il progetto">
+          <span class="audience-icon startup-icon" aria-hidden="true">↗</span>
+          <span class="audience-text"><strong>Ho un progetto da realizzare</strong><small>Lo progettiamo insieme e attiviamo le competenze per portarlo avanti.</small></span>
           <span class="audience-arrow" aria-hidden="true">↗</span>
         </a>
-        <div class="audience-panel-footer"><span class="status-dot" aria-hidden="true"></span> Un unico Studio, professionisti dedicati al tuo progetto.</div>
+        <div class="audience-panel-footer"><span class="status-dot" aria-hidden="true"></span> La consulenza ha valore anche se non serve sviluppare nulla.</div>
       </div>
     </div></section>
     <section class="section problem" id="problema"><div class="shell problem-layout">
-      <div class="problem-intro"><div class="label">IL PROBLEMA</div><h2>Hai un progetto digitale. Ma chi lo segue davvero?</h2><p>Mettere insieme persone, tempi e competenze può costare più energie del progetto stesso.</p></div>
+      <div class="problem-intro"><div class="label">IL PROBLEMA</div><h2>Il problema non è solo sviluppare. È scegliere cosa fare.</h2><p>Prima della tecnologia servono le decisioni giuste. Poi le competenze e qualcuno che coordini tutto.</p></div>
       <div class="problem-list">
-        <div class="problem-row"><span class="round" aria-hidden="true">01</span><div><h3>Ti servono più competenze</h3><p>Analisi, sviluppo, design e AI: difficili da trovare e coordinare da soli.</p></div></div>
-        <div class="problem-row"><span class="round" aria-hidden="true">02</span><div><h3>Partire costa</h3><p>Assunzioni o preventivi importanti, prima ancora di sapere cosa costruire.</p></div></div>
-        <div class="problem-row"><span class="round" aria-hidden="true">03</span><div><h3>Dopo il rilascio serve continuità</h3><p>Una soluzione digitale va seguita e migliorata, non soltanto consegnata.</p></div></div>
+        <div class="problem-row"><span class="round" aria-hidden="true">01</span><div><h3>Non sai quale soluzione adottare</h3><p>Hai un problema o un’opportunità, ma non è chiaro cosa convenga realizzare o acquistare.</p></div></div>
+        <div class="problem-row"><span class="round" aria-hidden="true">02</span><div><h3>Non vuoi gestire più fornitori</h3><p>Analisi, design, sviluppo e AI richiedono competenze diverse, non sempre disponibili internamente.</p></div></div>
+        <div class="problem-row"><span class="round" aria-hidden="true">03</span><div><h3>Hai bisogno di continuità</h3><p>Un progetto richiede scelte, manutenzione e miglioramenti, anche dopo il primo rilascio.</p></div></div>
       </div>
     </div></section>
     <section class="section solution" id="soluzione"><div class="shell">
-      <div class="section-title"><div class="label">LA SOLUZIONE</div><h2>Un team digitale a disposizione.<br>Un referente con cui parlare.</h2><p>Prendiamo in carico il progetto dall’analisi alla realizzazione, coinvolgendo i professionisti necessari.</p></div>
+      <div class="section-title"><div class="label">LA SOLUZIONE</div><h2>Prima le decisioni giuste.<br>Poi, se serve, la tecnologia.</h2><p>La consulenza è un servizio vero e proprio. La realizzazione e il supporto possono seguire, ma non sono obbligatori.</p></div>
       <div class="solution-grid">
-        <article class="solution-card"><div class="round" aria-hidden="true">01</div><h3>Consulente dedicato</h3><p>Una persona di riferimento che conosce il tuo progetto e segue le decisioni.</p></article>
-        <article class="solution-card"><div class="round" aria-hidden="true">02</div><h3>Competenze quando servono</h3><p>Attiviamo la rete di specialisti e usiamo l’AI per lavorare in modo più rapido.</p></article>
-        <article class="solution-card"><div class="round" aria-hidden="true">03</div><h3>Servizio continuativo</h3><p>Realizziamo, gestiamo e miglioriamo la soluzione senza lasciarti solo dopo il lancio.</p></article>
+        <article class="solution-card"><div class="round" aria-hidden="true">01</div><h3>Consulenza e progettazione</h3><p>Analizziamo il problema, valutiamo le opzioni e definiamo cosa ha senso fare.</p></article>
+        <article class="solution-card"><div class="round" aria-hidden="true">02</div><h3>Realizzazione coordinata</h3><p>Un referente dedicato coordina specialisti e AI per trasformare il progetto in una soluzione concreta.</p></article>
+        <article class="solution-card"><div class="round" aria-hidden="true">03</div><h3>Gestione ed evoluzione</h3><p>Quando serve, restiamo al tuo fianco per supporto, integrazioni e miglioramenti.</p></article>
       </div>
     </div></section>
     <section class="section" id="metodo"><div class="shell">
-      <div class="section-title"><div class="label">COME FUNZIONA</div><h2>Prima capiamo. Poi costruiamo.</h2><p>L’analisi non è una formalità: serve a scegliere cosa realizzare e con quali priorità.</p></div>
+      <div class="section-title"><div class="label">COME FUNZIONA</div><h2>Un percorso concreto, anche senza sviluppo.</h2><p>Non devi sapere da subito cosa acquistare o costruire. Lavoriamo per arrivare a una decisione motivata.</p></div>
       <div class="how-steps">
-        <div class="how-step"><div class="step-no">01 / ANALISI</div><h3>Ci racconti l’esigenza</h3><p>Mettiamo a fuoco obiettivi, vincoli e soluzione. Questo lavoro fa parte dell’incarico.</p></div>
-        <div class="how-step"><div class="step-no">02 / REALIZZAZIONE</div><h3>Costruiamo insieme</h3><p>Coinvolgiamo gli specialisti adatti e realizziamo ciò che serve, per passi concreti.</p></div>
-        <div class="how-step"><div class="step-no">03 / EVOLUZIONE</div><h3>Restiamo al tuo fianco</h3><p>Seguiamo il prodotto, gestiamo le richieste e pianifichiamo gli interventi successivi.</p></div>
+        <div class="how-step"><div class="step-no">01 / ANALISI</div><h3>Analisi e consulenza</h3><p>Chiarifichiamo problema, obiettivi e alternative. Ti aiutiamo a scegliere la strada giusta, anche se non prevede sviluppo.</p></div>
+        <div class="how-step"><div class="step-no">02 / REALIZZAZIONE</div><h3>Progettazione e realizzazione</h3><p>Se decidi di procedere, definiamo il progetto e coinvolgiamo le competenze necessarie per svilupparlo.</p></div>
+        <div class="how-step"><div class="step-no">03 / EVOLUZIONE</div><h3>Supporto ed evoluzione</h3><p>Se il progetto lo richiede, ci occupiamo anche di gestione, integrazioni e nuove funzionalità.</p></div>
       </div>
-      <div class="how-foot">Hai già un prodotto? Possiamo partire anche dalla gestione o dall’evoluzione.</div>
+      <div class="how-foot">Puoi affidare a Digital Studio la sola consulenza, oppure continuare con la realizzazione e il supporto.</div>
     </div></section>
     <section class="section pricing" id="pricing"><div class="shell">
-      <div class="pricing-heading"><div><div class="label">IL MODELLO ECONOMICO</div><h2>Un costo per partire.<br><span class="accent">Un canone per continuare.</span></h2></div><p>La proposta dipende dal progetto e dalle competenze necessarie. Nessun prezzo inventato o pacchetto rigido.</p></div>
+      <div class="pricing-heading"><div><div class="label">IL MODELLO ECONOMICO</div><h2>Consulenza a progetto.<br><span class="accent">Continuità quando serve.</span></h2></div><p>Definiamo l’impegno in base alle esigenze. Il canone non è obbligatorio per la sola consulenza.</p></div>
       <div class="pricing-grid">
-        <article class="pricing-card"><div class="number">01</div><h3>Fee di avvio</h3><p>Analisi, definizione degli obiettivi, progettazione e piano di lavoro.</p></article>
-        <article class="pricing-card featured"><div class="number">02</div><h3>Canone mensile</h3><p>Capacità concordata per sviluppo, gestione, supporto e miglioramenti.</p></article>
+        <article class="pricing-card"><div class="number">01</div><h3>Consulenza e avvio</h3><p>Un incarico remunerato per analisi, alternative, progettazione e decisioni.</p></article>
+        <article class="pricing-card featured"><div class="number">02</div><h3>Realizzazione e continuità</h3><p>Un progetto concordato o un canone mensile per sviluppo, gestione, supporto e miglioramenti.</p></article>
       </div>
-      <div class="pricing-disclaimer"><p><strong>Su alcuni progetti:</strong> possiamo concordare anche una quota dei ricavi generati, solo quando sono misurabili. Costi, durata e proprietà della soluzione si definiscono prima di iniziare.</p><a href="#contatti">Parliamo dei costi <span aria-hidden="true">→</span></a></div>
+      <div class="pricing-disclaimer"><p><strong>La consulenza non ti vincola allo sviluppo.</strong> Per alcuni progetti possiamo concordare una quota dei risultati economici misurabili. Costi, durata e proprietà della soluzione si definiscono prima di iniziare.</p><a href="#contatti">Parliamo dei costi <span aria-hidden="true">→</span></a></div>
     </div></section>
 
-    <section class="contact" id="contatti"><div class="shell contact-grid"><div class="contact-intro"><div class="label">CONTATTACI</div><h2>Raccontaci il progetto.</h2><p>Hai un’idea, un’esigenza aziendale o un prodotto da migliorare? Scrivici da dove vuoi partire.</p><div class="contact-perks"><span>✓ Primo confronto</span><span>✓ Un referente umano</span><span>✓ Nessun impegno</span></div></div><div class="form-card"><h3>Raccontaci la tua esigenza</h3><p class="form-description">Questa è una demo: il form prepara un riepilogo che puoi copiare. Non invia email.</p><form id="contact-form"><div class="field-group"><div class="field"><label for="name">Nome e cognome *</label><input id="name" name="name" required autocomplete="name" placeholder="Mario Rossi" maxlength="90"></div><div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="mario@azienda.it" maxlength="150"></div></div><p id="audience-feedback" class="audience-feedback" aria-live="polite">Scegli qui il tuo profilo oppure usa una delle due schede in alto.</p><div class="field-group"><div class="field"><label for="company">Azienda / progetto</label><input id="company" name="company" autocomplete="organization" placeholder="Nome dell’attività" maxlength="100"></div><div class="field"><label for="audience">Chi sei?</label><select id="audience" name="audience"><option value="PMI / impresa">PMI / impresa</option><option value="Startup / founder">Startup / founder</option><option value="Altro">Altro</option></select></div></div><div class="group-title">A che punto sei?</div><div class="choice-set" role="group" aria-label="Fase del progetto"><label><input type="radio" name="phase" value="Ho un’idea" checked>Ho un’idea</label><label><input type="radio" name="phase" value="Da realizzare">Da realizzare</label><label><input type="radio" name="phase" value="Da migliorare">Da migliorare</label></div><div class="field"><label for="message">Di cosa hai bisogno? *</label><textarea id="message" name="message" required minlength="15" maxlength="2500" placeholder="Raccontaci brevemente cosa vorresti realizzare e quale risultato ti aspetti..."></textarea></div><div class="form-actions"><button class="btn primary" type="submit">Simula l’invio <span class="arrow" aria-hidden="true">→</span></button><span class="form-hint">Demo: nessuna richiesta viene spedita.</span></div></form><div id="form-result" class="result" role="status" aria-live="polite"><h4>Richiesta compilata correttamente</h4><p>Hai testato il flusso del form. In questa demo non è stato inviato nulla: puoi copiare il riepilogo della richiesta.</p><button type="button" id="copy-request" class="btn">Copia il riepilogo</button></div></div></div></section>
+    <section class="contact" id="contatti"><div class="shell contact-grid"><div class="contact-intro"><div class="label">CONTATTACI</div><h2>Partiamo dalla tua esigenza.</h2><p>Puoi raccontarci un problema ancora da inquadrare, un’idea da valutare o un progetto già definito.</p><div class="contact-perks"><span>✓ Primo confronto</span><span>✓ Un referente umano</span><span>✓ Nessun impegno</span></div></div><div class="form-card"><h3>Raccontaci la tua esigenza</h3><p class="form-description">Questa è una demo: il form prepara un riepilogo che puoi copiare. Non invia email.</p><form id="contact-form"><div class="field-group"><div class="field"><label for="name">Nome e cognome *</label><input id="name" name="name" required autocomplete="name" placeholder="Mario Rossi" maxlength="90"></div><div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="mario@azienda.it" maxlength="150"></div></div><div class="field"><label for="company">Azienda o progetto <span class="optional-field">(facoltativo)</span></label><input id="company" name="company" autocomplete="organization" placeholder="Nome dell’attività o del progetto" maxlength="100"></div>
+<div class="group-title">Che tipo di supporto cerchi?</div><div class="choice-set" role="group" aria-label="Tipo di esigenza"><label><input type="radio" name="phase" value="Da capire" checked>Devo capire cosa fare</label><label><input type="radio" name="phase" value="Da realizzare">Voglio realizzarlo</label><label><input type="radio" name="phase" value="Da migliorare">Voglio migliorarlo</label></div><p id="need-feedback" class="need-feedback" aria-live="polite"></p>
+<div class="field"><label for="message">Di cosa hai bisogno? *</label><textarea id="message" name="message" required minlength="15" maxlength="2500" placeholder="Descrivi il problema, l’idea o il progetto. Anche se non sai ancora quale soluzione serva…"></textarea></div><div class="form-actions"><button class="btn primary" type="submit">Simula l’invio <span class="arrow" aria-hidden="true">→</span></button><span class="form-hint">Demo: nessuna richiesta viene spedita.</span></div></form><div id="form-result" class="result" role="status" aria-live="polite"><h4>Richiesta compilata correttamente</h4><p>Hai testato il flusso del form. In questa demo non è stato inviato nulla: puoi copiare il riepilogo della richiesta.</p><button type="button" id="copy-request" class="btn">Copia il riepilogo</button></div></div></div></section>
   </main>
   <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#inizio"><svg class="brand-symbol" viewBox="0 0 44 44" role="img" aria-label="logo Digital Studio"><rect x="5" y="5" width="34" height="34" rx="12" fill="#edf3ff"/><path d="M15 13V31H23C34 31 34 13 23 13H15" fill="none" stroke="#2662f3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="11" r="5" fill="#7565ea"/></svg><span class="brand-name">Digital<br>Studio</span></a><span>Prototipo dimostrativo · Invio richieste non attivo</span><a href="#inizio">Torna su ↑</a></div></footer>
   <script>
@@ -132,13 +148,16 @@
       const nav = document.querySelector('.navigation');
       menu.addEventListener('click', function(){const open = nav.classList.toggle('open'); menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Chiudi menu':'Apri menu'); menu.textContent=open?'✕':'☰'});
       nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
-      document.querySelectorAll('.audience-card[data-audience]').forEach(card=>card.addEventListener('click',function(){
-        const select=document.getElementById('audience');
-        select.value=card.dataset.audience;
-        document.getElementById('audience-feedback').textContent=card.dataset.audience==='Startup / founder'?'Hai selezionato: Startup / founder':'Hai selezionato: PMI / impresa';
+      document.querySelectorAll('.audience-card[data-need]').forEach(card=>card.addEventListener('click',function(){
+        const choice=document.querySelector('[name="phase"][value="'+card.dataset.need+'"]');
+        if(choice) choice.checked=true;
+        document.getElementById('need-feedback').textContent='✓ Abbiamo preselezionato il punto da cui vuoi partire.';
+      }));
+      document.querySelectorAll('[name="phase"]').forEach(choice=>choice.addEventListener('change',function(){
+        document.getElementById('need-feedback').textContent='';
       }));
       const form=document.getElementById('contact-form');const result=document.getElementById('form-result');let summary='';
-      form.addEventListener('submit',function(event){event.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);summary=`RICHIESTA — DIGITAL STUDIO\nNome: ${data.get('name')}\nEmail: ${data.get('email')}\nAzienda/progetto: ${data.get('company')||'Non indicata'}\nProfilo: ${data.get('audience')}\nFase: ${data.get('phase')}\nEsigenza:\n${data.get('message')}`;result.classList.add('visible');result.scrollIntoView({behavior:'smooth',block:'nearest'});});
+      form.addEventListener('submit',function(event){event.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);summary=`RICHIESTA — DIGITAL STUDIO\nNome: ${data.get('name')}\nEmail: ${data.get('email')}\nAzienda/progetto: ${data.get('company')||'Non indicata'}\nFase: ${data.get('phase')}\nEsigenza:\n${data.get('message')}`;result.classList.add('visible');result.scrollIntoView({behavior:'smooth',block:'nearest'});});
       document.getElementById('copy-request').addEventListener('click',async function(){try{await navigator.clipboard.writeText(summary);this.textContent='Riepilogo copiato ✓'}catch(e){const blob=new Blob([summary],{type:'text/plain'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='richiesta_digital_studio.txt';a.click();URL.revokeObjectURL(url);this.textContent='Riepilogo scaricato ✓'}});
     })();
   </script>
