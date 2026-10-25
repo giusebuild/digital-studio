@@ -234,3 +234,17 @@
   .site-v2 .mobile-nav a{font-size:15px}
 }
 @media(prefers-reduced-motion:reduce){.site-v2 *,.site-v2 *:before,.site-v2 *:after{transition:none!important;scroll-behavior:auto!important}}
+
+/* Single focused message in the hero: no empty second column. */
+.site-v2.general-site .hero-layout{grid-template-columns:minmax(0,1fr);gap:0}
+.site-v2.general-site .hero-main{max-width:840px}
+.site-v2.general-site .hero-main h1{max-width:840px}
+.site-v2.commercial-site .commercial-hero-grid{grid-template-columns:minmax(0,1fr);gap:0}
+.site-v2.commercial-site .commercial-hero-copy{max-width:850px}
+.site-v2.commercial-site .commercial-hero-desc{max-width:690px;font-size:17px}
+@media(max-width:830px){
+  .site-v2.general-site .hero-layout,.site-v2.commercial-site .commercial-hero-grid{grid-template-columns:1fr}
+}
+@media(max-width:565px){
+  .site-v2.commercial-site .commercial-hero-desc{font-size:15px}
+}
