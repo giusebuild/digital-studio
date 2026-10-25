@@ -140,3 +140,10 @@
   .site-v2.commercial-site .contact-section{padding:76px 0 90px;}
 }
 @media(prefers-reduced-motion:reduce){.site-v2.commercial-site *, .site-v2.commercial-site *:before,.site-v2.commercial-site *:after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Compact offer strip for the commercial landing */
+.site-v2.commercial-site .revenue-offer-note{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;border-top:1px solid #cad3d3;border-bottom:1px solid #cad3d3;padding:22px 0;font-size:13px;color:#445762}
+.site-v2.commercial-site .revenue-offer-note>span{padding-left:15px;position:relative}
+.site-v2.commercial-site .revenue-offer-note>span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue);position:absolute;top:8px;left:0}
+.site-v2.commercial-site .revenue-offer-note a{color:var(--blue);font-size:13px;font-weight:700;margin-left:auto;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:565px){.site-v2.commercial-site .revenue-offer-note{align-items:flex-start;flex-direction:column;gap:12px}.site-v2.commercial-site .revenue-offer-note a{margin-left:0;margin-top:4px}}
