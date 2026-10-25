@@ -1,54 +1,50 @@
 # Digital Studio
 
-Sito statico di presentazione del concept **Digital Studio**, con un percorso rivolto alle imprese e uno alle collaborazioni professionali.
+Sito statico con una pagina principale per scegliere tra due proposte commerciali e due siti separati, navigabili come pagine autonome.
 
-## Posizionamento
+## Percorsi
 
-Un referente esterno per le esigenze digitali delle imprese: **consulenza, affiancamento continuativo, realizzazione e formazione**.
+- [Master](https://giusebuild.github.io/digital-studio/) — scelta visiva tra i due percorsi.
+- [Consulenza e progetti](https://giusebuild.github.io/digital-studio/generale/) — problemi aziendali, servizi, metodo e contatti.
+- [Performance commerciale B2B](https://giusebuild.github.io/digital-studio/commerciale/) — vendite perse, inefficienze del team commerciale, Revenue Operations e un caso illustrativo interattivo.
+- [Partner](https://giusebuild.github.io/digital-studio/partner/) — proposta di collaborazione e sviluppo commerciale per specialisti.
 
-Il cliente può affidare allo Studio una singola decisione o un progetto, oppure un incarico continuativo per attività e responsabilità concordate. La rete di partner è un modello organizzativo e una possibile fonte di opportunità commerciali reciproche.
-
-Il business model, i prezzi, l'ICP specifico e la rete operativa restano da validare.
-
-## Versioni e pagine
-
-- [Homepage generale](https://giusebuild.github.io/digital-studio/): posizionamento ampio, consulenza, progetti, affiancamento, formazione. Rimane la versione principale, con link per confrontare le ipotesi.
-- [Ipotesi Revenue Operations B2B](https://giusebuild.github.io/digital-studio/commerciale/): posizionamento verticale su opportunità commerciali perse, inefficienze nelle vendite e controllo del processo. Proposta da discutere con partner e clienti, non ancora validata.
-- [Per i partner](https://giusebuild.github.io/digital-studio/partner/): opportunità commerciali, collaborazione, modalità di lavoro e modulo dimostrativo.
-
-L'architettura consente di aggiungere ulteriori ipotesi come sottopagine, senza sostituire il sito generale. Nessuna pagina nuova assume casi studio o risultati già ottenuti.
-
-## Principi dell'interfaccia
-
-- Estetica editoriale sobria: tipografia e gerarchia prima di decorazioni e icone.
-- Layout responsive; navigazione accessibile da tastiera; interazioni minimali.
-- Esempio interattivo funzionale nella homepage: tre alternative da confrontare, senza simulare una diagnosi automatica.
-- Nessuna immagine stock, metrica inventata, recensione fittizia, analytics o font caricati da servizi esterni.
-- I moduli validano i dati localmente e offrono un riepilogo copiabile. **Non inviano messaggi e non raccolgono lead.**
+La pagina master serve per confrontare diverse direzioni con i partner. Le due pagine commerciali parlano ai rispettivi clienti, senza etichette come *ipotesi*, *versione* o *simulazione*.
 
 ## Struttura
 
 ```text
-index.html                 Home imprese
-partner/index.html         Home partner
-assets/styles.css          Base UI e componenti form / navigazione
-assets/editorial.css       Identità visiva editoriale e layout responsive
-assets/site.js             Menu mobile e moduli demo
-assets/editorial.js        Scenario interattivo e preselezione delle richieste
-assets/positionings.css     Stili confronto e offerta RevOps
-assets/commerciale.js      Interazione demo del processo commerciale
-commerciale/index.html    Ipotesi commerciale B2B
-assets/icon.svg            Favicon
+index.html                  Master
+generale/index.html         Consulenza e progetti
+commerciale/index.html      Revenue Operations
+partner/index.html          Professionisti e partner
+assets/master.css           Design del master
+assets/styles.css           Componenti condivisi
+assets/editorial.css        Stile delle pagine
+assets/positionings.css     Dettagli pagina RevOps
+assets/site.js              Menu mobile e riepiloghi form
+assets/editorial.js         Preselezione delle esigenze
+assets/commerciale.js       Esempio commerciale interattivo
+assets/icon.svg             Favicon
 ```
 
-Il sito funziona senza build o dipendenze JavaScript. Per provarlo localmente:
+Tecnologia: HTML, CSS e JavaScript statici, senza framework, font remoti o tracciamento.
+
+## Limiti dei prototipi
+
+- I moduli dimostrativi **non inviano richieste né salvano dati**. Consentono di copiare un riepilogo del testo inserito.
+- Le due proposte non sono validate commercialmente.
+- Non sono presenti numeri inventati, testimonianze o risultati attribuiti a clienti inesistenti.
+- L'esempio di intervento RevOps è illustrativo, non un caso reale.
+- Le landing dedicate sono contrassegnate `noindex` finché il posizionamento non è scelto.
+- Per lanciare un sito commerciale reale servono un recapito attivo e gli opportuni adempimenti sul trattamento dei dati.
+
+## Pubblicazione
+
+GitHub Pages dal branch `main`, cartella `/ (root)`.
+
+Per il test locale:
 
 ```bash
 python3 -m http.server 8080
 ```
-
-### Pubblicazione
-
-GitHub Pages, branch `main`, cartella `/ (root)`. Ogni aggiornamento del branch pubblica una nuova versione.
-
-Prima di attivare la raccolta reale dei contatti servono un canale di invio, trattamento dati appropriato e informativa privacy.
