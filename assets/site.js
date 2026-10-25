@@ -51,6 +51,19 @@
         'Collaborazione:',
         values.get('message')
       ].join('\n');
+    } else if (form.dataset.demoForm === 'commerciale') {
+      summary = [
+        'RICHIESTA PERFORMANCE COMMERCIALI — DIGITAL STUDIO',
+        'Nome: ' + values.get('name'),
+        'Email: ' + values.get('email'),
+        'Azienda: ' + values.get('company'),
+        'Problema: ' + values.get('need'),
+        'Team commerciale: ' + values.get('team'),
+        'CRM: ' + values.get('crm'),
+        '',
+        'Descrizione:',
+        values.get('message')
+      ].join('\n');
     } else {
       summary = [
         'RICHIESTA — DIGITAL STUDIO',
