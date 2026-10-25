@@ -10,10 +10,13 @@ Il cliente può affidare allo Studio una singola decisione o un progetto, oppure
 
 Il business model, i prezzi, l'ICP specifico e la rete operativa restano da validare.
 
-## Pagine
+## Versioni e pagine
 
-- [Per le imprese](https://giusebuild.github.io/digital-studio/): situazioni riconoscibili, servizi, percorso di consulenza, esempio interattivo delle alternative e modulo dimostrativo.
+- [Homepage generale](https://giusebuild.github.io/digital-studio/): posizionamento ampio, consulenza, progetti, affiancamento, formazione. Rimane la versione principale, con link per confrontare le ipotesi.
+- [Ipotesi Revenue Operations B2B](https://giusebuild.github.io/digital-studio/commerciale/): posizionamento verticale su opportunità commerciali perse, inefficienze nelle vendite e controllo del processo. Proposta da discutere con partner e clienti, non ancora validata.
 - [Per i partner](https://giusebuild.github.io/digital-studio/partner/): opportunità commerciali, collaborazione, modalità di lavoro e modulo dimostrativo.
+
+L'architettura consente di aggiungere ulteriori ipotesi come sottopagine, senza sostituire il sito generale. Nessuna pagina nuova assume casi studio o risultati già ottenuti.
 
 ## Principi dell'interfaccia
 
@@ -32,6 +35,9 @@ assets/styles.css          Base UI e componenti form / navigazione
 assets/editorial.css       Identità visiva editoriale e layout responsive
 assets/site.js             Menu mobile e moduli demo
 assets/editorial.js        Scenario interattivo e preselezione delle richieste
+assets/positionings.css     Stili confronto e offerta RevOps
+assets/commerciale.js      Interazione demo del processo commerciale
+commerciale/index.html    Ipotesi commerciale B2B
 assets/icon.svg            Favicon
 ```
 
