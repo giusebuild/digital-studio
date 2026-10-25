@@ -15,26 +15,20 @@
   <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css">
   <link rel="stylesheet" href="../assets/editorial.css">
+  <link rel="stylesheet" href="../assets/modern.css">
   <script src="../assets/site.js" defer></script>
   <script src="../assets/editorial.js" defer></script>
 </head>
-<body class="site-v2">
+<body class="site-v2 general-site">
   <a class="skip-link" href="#contenuto">Vai al contenuto</a>
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="../" aria-label="Digital Studio, homepage"><span class="brand-wordmark">DIGITAL <em>STUDIO</em></span></a>
-      <nav class="desktop-nav" aria-label="Navigazione principale">
-        <a href="#situazioni">Quando servirci</a>
-        <a href="#servizi">Servizi</a>
-        <a href="#metodo">Metodo</a>
-        <a href="../partner/">Partner</a>
-      </nav>
+      <nav class="desktop-nav" aria-label="Navigazione principale"><a href="#situazioni">Per chi</a><a href="#servizi">Servizi</a><a href="#metodo">Metodo</a><a href="#chi-siamo">Chi siamo</a></nav>
       <a class="button button--primary nav-cta" href="#contatti">Parliamone</a>
       <button class="mobile-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>☰</button>
     </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigazione mobile">
-      <a href="#situazioni">Quando servirci</a><a href="#servizi">Servizi</a><a href="#metodo">Metodo</a><a href="../partner/">Partner</a><a href="#contatti" class="button button--primary">Parliamone</a>
-    </nav>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Navigazione mobile"><a href="#situazioni">Per chi</a><a href="#servizi">Servizi</a><a href="#metodo">Metodo</a><a href="#chi-siamo">Chi siamo</a><a href="#contatti" class="button button--primary">Parliamone</a></nav>
   </header>
 
   <main id="contenuto">
@@ -43,13 +37,13 @@
         <div class="hero-main">
           <span class="micro-label">Consulenza e progetti per le imprese</span>
           <h1 id="hero-title">Progetti che avanzano.<br><em>Meno cose da seguire.</em></h1>
-          <p class="hero-statement">Un riferimento per le esigenze della tua impresa.</p>
+          <p class="hero-statement">Un unico riferimento. Le competenze che servono.</p>
           <p class="hero-summary">Ti aiutiamo a scegliere le soluzioni adatte, trovare le competenze giuste e portare avanti i progetti, senza dover coordinare tutto da solo.</p>
           <div class="hero-actions"><a class="button button--primary" href="#contatti">Raccontaci cosa ti serve <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#situazioni">Scopri come aiutarti <span aria-hidden="true">↓</span></a></div>
         </div>
         <aside class="entry-panel" aria-labelledby="entry-title">
-          <span class="micro-label">Da dove vuoi partire?</span>
-          <h2 id="entry-title">Qual è la tua esigenza?</h2>
+          <span class="micro-label">Da cosa partiamo?</span>
+          <h2 id="entry-title">Di cosa hai bisogno?</h2>
           <div class="entry-options">
             <a class="entry-option" href="#contatti" data-need="Valutare un problema"><span class="entry-number">01</span><span>Devo capire cosa conviene fare</span><span class="entry-end" aria-hidden="true">↗</span></a>
             <a class="entry-option" href="#contatti" data-need="Un progetto"><span class="entry-number">02</span><span>Ho un progetto da realizzare</span><span class="entry-end" aria-hidden="true">↗</span></a>
@@ -109,12 +103,16 @@
       </div>
     </section>
 
-    <aside class="partner-invite" aria-labelledby="partner-title">
-      <div class="shell partner-invite-grid">
-        <div><span class="micro-label">Professionisti e imprese</span><h2 id="partner-title">Lavoriamo con competenze complementari.</h2></div>
-        <div><p>Costruiamo progetti con specialisti di fiducia. Se vuoi collaborare, raccontaci cosa fai.</p><a class="quiet-link" href="../partner/">Collabora con noi <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </aside>
+    <section class="section studio-about" id="chi-siamo" aria-labelledby="about-title">
+  <div class="shell studio-about-layout">
+    <div><span class="micro-label">Chi siamo</span><h2 id="about-title">Una visione d'insieme.<br>Persone di fiducia.</h2></div>
+    <div class="studio-about-body">
+      <p>Digital Studio nasce per aiutare le imprese a prendere decisioni e realizzare progetti senza dover gestire ogni competenza separatamente.</p>
+      <p>Lavoriamo attraverso una rete di professionisti di fiducia, con un riferimento chiaro per priorità, coordinamento e risultati.</p>
+      <div class="about-values"><span>Responsabilità</span><span>Collaborazione</span><span>Miglioramento continuo</span></div>
+    </div>
+  </div>
+</section>
 
     <section class="contact-section" id="contatti" aria-labelledby="contatti-title">
       <div class="shell contact-layout">
@@ -141,7 +139,7 @@
   </main>
   <footer class="footer"><div class="shell footer-inner">
     <a class="brand" href="../" aria-label="Digital Studio, homepage"><span class="brand-wordmark">DIGITAL <em>STUDIO</em></span></a>
-    <nav class="footer-links" aria-label="Navigazione footer"><a href="../">Home</a><a href="#servizi">Servizi</a><a href="../partner/">Partner</a><a href="#contatti">Contatti</a></nav>
+    <nav class="footer-links" aria-label="Navigazione footer"><a href="../">Home</a><a href="#servizi">Servizi</a><a href="#chi-siamo">Chi siamo</a><a href="../partner/">Partner</a><a href="#contatti">Contatti</a></nav>
     <div class="footer-note"><span>Modulo dimostrativo</span><span>© Digital Studio 2026</span></div>
   </div></footer>
 </body>
