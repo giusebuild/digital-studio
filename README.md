@@ -9,7 +9,7 @@ Sito statico con una pagina principale per scegliere tra due proposte commercial
 - [Performance commerciale B2B](https://giusebuild.github.io/digital-studio/commerciale/) — vendite perse, inefficienze del team commerciale, Revenue Operations e un caso illustrativo interattivo.
 - [Partner](https://giusebuild.github.io/digital-studio/partner/) — proposta di collaborazione e sviluppo commerciale per specialisti.
 
-La pagina master serve per confrontare diverse direzioni con i partner. Le due pagine commerciali parlano ai rispettivi clienti, senza etichette come *ipotesi*, *versione* o *simulazione*.
+La pagina master serve per confrontare diverse direzioni con i partner. Le pagine per i clienti utilizzano la stessa navigazione **Per chi · Servizi · Metodo · Chi siamo**, con CTA **Parliamone**; la pagina Partner ha invece la propria navigazione. Le due pagine commerciali parlano ai rispettivi clienti, senza etichette come *ipotesi*, *versione* o *simulazione*.
 
 ## Struttura
 
@@ -18,17 +18,18 @@ index.html                  Master
 generale/index.html         Consulenza e progetti
 commerciale/index.html      Revenue Operations
 partner/index.html          Professionisti e partner
-assets/master.css           Design del master
+assets/master.css           Design del master, moderno e responsive
 assets/styles.css           Componenti condivisi
-assets/editorial.css        Stile delle pagine
-assets/positionings.css     Dettagli pagina RevOps
+assets/editorial.css        Base layout condivisa
+assets/modern.css           Design system Modern B2B: sans-serif, spaziatura, colori, UI
+assets/positionings.css     Layout specifici della pagina RevOps
 assets/site.js              Menu mobile e riepiloghi form
 assets/editorial.js         Preselezione delle esigenze
 assets/commerciale.js       Esempio commerciale interattivo
 assets/icon.svg             Favicon
 ```
 
-Tecnologia: HTML, CSS e JavaScript statici, senza framework, font remoti o tracciamento.
+Tecnologia: HTML, CSS e JavaScript statici, senza framework, font remoti o tracciamento. Il design Modern B2B sostituisce visivamente i titoli serif precedenti con sans-serif più decisa, mantenendo uno stile sobrio, adatto anche a mobile.
 
 ## Limiti dei prototipi
 
