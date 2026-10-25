@@ -1,0 +1,236 @@
+/* Digital Studio — Modern B2B identity
+   One visual system shared by general, commercial and partner sites.
+   No remote fonts, icons, animations or scripts.
+*/
+.site-v2 {
+  --paper:#f2f5f7;
+  --canvas:#ffffff;
+  --ink:#142533;
+  --ink-2:#34495a;
+  --soft:#586a79;
+  --stroke:#d7e0e8;
+  --blue:#1659d5;
+  --navy:#122f4b;
+  --max:1180px;
+  background:#fff;
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  letter-spacing:-.012em
+}
+.site-v2 .shell{max-width:var(--max);width:calc(100% - 104px)}
+.site-v2 h1,.site-v2 h2,.site-v2 h3,.site-v2 h4{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  font-style:normal;
+  color:var(--ink);
+  letter-spacing:-.052em
+}
+.site-v2 h1{font-size:clamp(48px,6vw,82px);font-weight:780;line-height:1.075}
+.site-v2 h2{font-size:clamp(34px,3.9vw,51px);font-weight:760;line-height:1.13}
+.site-v2 h3{font-weight:720;letter-spacing:-.025em}
+.site-v2 h1 em,.site-v2 h2 em,
+.site-v2 .hero-main h1 em,
+.site-v2.commercial-site .commercial-hero h1 em,
+.site-v2.commercial-site .commercial-two-col h2 em,
+.site-v2 .partner-hero h1 em {
+  font-family:inherit;
+  font-style:normal!important;
+  font-weight:inherit!important;
+  color:var(--blue)
+}
+.site-v2 .section{padding:86px 0}
+.site-v2 .section--paper{background:var(--paper)}
+.site-v2 .micro-label{font-size:11px;letter-spacing:.115em;color:var(--blue);font-weight:760}
+.site-v2 p{line-height:1.58}
+.site-v2 .site-header{background:#fff;border-bottom:1px solid var(--stroke);box-shadow:none;backdrop-filter:none}
+.site-v2 .header-inner{height:74px;min-height:74px}
+.site-v2 .brand-wordmark{font-size:16px;font-weight:830;letter-spacing:-.055em}
+.site-v2 .brand-wordmark em{color:var(--blue);font-style:normal}
+.site-v2 .desktop-nav{gap:24px}
+.site-v2 .desktop-nav a{font-size:13px;font-weight:650;color:#394e5f;white-space:nowrap}
+.site-v2 .desktop-nav a:hover,.site-v2 .desktop-nav a:focus-visible{color:var(--blue)}
+.site-v2 .button,.site-v2 .nav-cta{border-radius:4px;box-shadow:none;transition:background-color .13s,border-color .13s}
+.site-v2 .button--primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.site-v2 .button--primary:hover{background:#1146ae;border-color:#1146ae}
+.site-v2 .quiet-link{color:var(--blue);font-weight:730;border-bottom:1px solid currentColor}
+.site-v2 .site-header .nav-cta{min-height:41px;padding:10px 20px}
+.site-v2 a:focus-visible,.site-v2 button:focus-visible,.site-v2 input:focus-visible,.site-v2 textarea:focus-visible{
+  outline:3px solid #7bafff;outline-offset:3px
+}
+.site-v2 .mobile-toggle{width:44px;height:44px;align-items:center;justify-content:center;border-color:#c9d5df;color:var(--ink);font-size:21px}
+.site-v2 .mobile-nav{background:#fff}
+.site-v2 .mobile-nav a{font-size:16px;color:var(--ink)}
+/* Customer hero: bold problem statements, useful supporting information */
+.site-v2 .hero{padding:88px 0 92px;background:#fff}
+.site-v2 .hero-layout{gap:70px}
+.site-v2 .hero-main h1{margin:16px 0 26px;font-size:clamp(48px,5.9vw,79px);line-height:1.08}
+.site-v2 .hero-statement{font-size:19px;color:#1d3e5a;font-weight:740}
+.site-v2 .hero-summary{font-size:16px;color:var(--soft);max-width:550px;line-height:1.65}
+.site-v2 .hero-actions{margin-top:28px;gap:22px}
+.site-v2 .hero-actions .button{min-height:50px;padding:13px 20px}
+.site-v2 .entry-panel{background:#f2f6fa;border:1px solid #d7e2eb;padding:34px 34px}
+.site-v2 .entry-panel h2{font-size:clamp(27px,2.65vw,35px);margin:12px 0 21px}
+.site-v2 .entry-options{border-top:1px solid #c5d3df}
+.site-v2 .entry-option{padding:18px 0;border-bottom:1px solid #c5d3df;font-weight:640;font-size:14px}
+.site-v2 .entry-option:hover{color:var(--blue)}
+.site-v2 .entry-foot{display:none}
+.site-v2 .section-lead{margin-bottom:34px}
+.site-v2 .section-lead h2{margin:13px 0 17px}
+.site-v2 .section-lead p{color:var(--soft)}
+.site-v2 .problem-rows{border-top:1px solid #c3d0dd}
+.site-v2 .problem-row{border-bottom:1px solid var(--stroke);padding:24px 0;gap:26px}
+.site-v2 .problem-row h3{font-size:20px;font-weight:730}
+.site-v2 .problem-row p{color:var(--soft);font-size:14px}
+.site-v2 .approach-grid{gap:76px}
+.site-v2 .approach-heading h2{margin:14px 0 0}
+.site-v2 .approach-description{padding-top:16px}
+.site-v2 .approach-description p{font-size:16px;color:var(--ink-2);margin-bottom:18px}
+.site-v2 .service-list{border-top:1px solid #afc0ce}
+.site-v2 .service-row{padding:26px 2px;border-bottom:1px solid var(--stroke);gap:20px}
+.site-v2 .service-row--key{background:#f2f6fa}
+.site-v2 .service-row h3{font-size:clamp(19px,1.9vw,24px);margin-bottom:5px}
+.site-v2 .service-row p{color:var(--soft)}
+.site-v2 .service-format{color:#47637c}
+.site-v2 .method-grid{gap:80px}
+.site-v2 .method-list{border-top:1px solid #c3d0dd}
+.site-v2 .method-list li{padding:21px 0;border-bottom:1px solid #c3d0dd;gap:15px}
+.site-v2 .method-list h3{font-size:18px;margin-bottom:6px}
+.site-v2 .method-list p{font-size:14px}
+/* About us: values expressed through working practices */
+.site-v2 .studio-about{background:var(--navy);color:#eaf1f8}
+.site-v2 .studio-about-layout{display:grid;grid-template-columns:1fr 1fr;gap:90px}
+.site-v2 .studio-about h2{color:#fff;margin:14px 0 0}
+.site-v2 .studio-about .micro-label{color:#b3d2ff}
+.site-v2 .studio-about-body p{font-size:16px;color:#e0eaf3;margin:0 0 17px;line-height:1.67}
+.site-v2 .about-values{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
+.site-v2 .about-values span{font-size:11px;font-weight:700;padding:10px 13px;background:#1b405f;border:1px solid #355674;color:#eaf3fb;border-radius:3px}
+/* Partner site uses the same typography and spacing */
+.site-v2 .partner-hero{padding:89px 0 93px}
+.site-v2 .partner-hero h1{font-size:clamp(47px,5.7vw,76px);font-weight:790;line-height:1.09;margin:19px 0 24px}
+.site-v2 .partner-hero .lead{font-size:17px;color:var(--soft);line-height:1.65}
+.site-v2 .partner-grid-notes{background:var(--paper);border:1px solid var(--stroke)}
+.site-v2 .partner-offer-row{padding:25px 0;gap:20px}
+.site-v2 .partner-offer-row h3{font-size:19px}
+.site-v2 .partner-values-new{background:var(--navy);padding:76px 0}
+.site-v2 .partner-values-new h2{color:#fff}
+.site-v2 .partner-values-new .micro-label{color:#b3d2ff}
+/* RevOps — same brand, sharper B2B tone */
+.site-v2.commercial-site .commercial-hero{padding:88px 0 94px}
+.site-v2.commercial-site .commercial-hero-grid{gap:72px;grid-template-columns:minmax(0,1.07fr) minmax(310px,.77fr)}
+.site-v2.commercial-site .commercial-hero h1{font-family:inherit;font-size:clamp(50px,6vw,80px);line-height:1.075;font-weight:800;letter-spacing:-.061em;margin:18px 0 25px}
+.site-v2.commercial-site .commercial-hero-payoff{font-size:21px;line-height:1.4;font-weight:720;color:#1c3b55}
+.site-v2.commercial-site .commercial-hero-desc{font-size:16px;color:var(--soft);line-height:1.64}
+.site-v2.commercial-site .commercial-hero-aside{background:#f2f6fa;border:1px solid #d7e2eb;padding:27px 28px}
+.site-v2.commercial-site .commercial-aside-kicker{color:#53708a}
+.site-v2.commercial-site .commercial-hero-row{border-color:#cfdae4;padding:20px 0}
+.site-v2.commercial-site .commercial-hero-row p{font-size:14px;font-weight:660;color:#274058}
+.site-v2.commercial-site .commercial-hero-aside-bottom{border-top-color:#cfdae4;color:#527086}
+.site-v2.commercial-site .commercial-section-heading{margin-bottom:32px}
+.site-v2.commercial-site .commercial-section-heading h2{margin:14px 0 17px}
+.site-v2.commercial-site .commercial-problems{border-top:1px solid var(--stroke)}
+.site-v2.commercial-site .commercial-two-col{gap:75px}
+.site-v2.commercial-site .commercial-two-col h2{margin:14px 0 0}
+.site-v2.commercial-site .commercial-explainer{padding-top:14px}
+.site-v2.commercial-site .commercial-explainer p{font-size:16px;color:var(--ink-2);margin-bottom:18px}
+.site-v2.commercial-site .commercial-explainer strong{color:var(--ink)}
+.site-v2.commercial-site .outcome-list{margin-top:44px}
+.site-v2.commercial-site .outcome-line{padding:20px 0;border-color:#cbd8e3;gap:23px}
+.site-v2.commercial-site .outcome-line h3{font-size:20px}
+.site-v2.commercial-site .outcome-line p{font-size:14px;color:var(--soft)}
+.site-v2.commercial-site .commercial-distinct{background:var(--navy);color:#f5f8fc}
+.site-v2.commercial-site .commercial-distinct .micro-label{color:#b3d2ff}
+.site-v2.commercial-site .commercial-distinct h2{color:#fff}
+.site-v2.commercial-site .commercial-distinct .commercial-explainer p{color:#e0eaf3}
+.site-v2.commercial-site .commercial-distinct .commercial-explainer strong{color:#fff}
+.site-v2.commercial-site .commercial-distinct .commercial-value-line{border-color:#466987;color:#d1e4f7!important}
+.site-v2.commercial-site .commercial-method{background:var(--paper)}
+.site-v2.commercial-site .commercial-case{background:#edf3f8;border-color:#d6e0e9}
+.site-v2.commercial-site .commercial-case-grid{gap:68px}
+.site-v2.commercial-site .commercial-case-grid>div:first-child>p{color:var(--ink-2);font-size:16px}
+.site-v2.commercial-site .commercial-case-demo{border:1px solid #cad7e2;background:#fff;border-radius:4px;padding:26px}
+.site-v2.commercial-site .stage-tabs{border-color:#cad7e2}
+.site-v2.commercial-site .stage-tabs button[aria-selected="true"]{border-bottom-color:var(--blue)}
+.site-v2.commercial-site [data-stage-panel] h4{font-family:inherit;font-size:25px;font-weight:730;letter-spacing:-.038em;color:var(--ink)}
+.site-v2.commercial-site .revenue-services{background:#fff}
+.site-v2.commercial-site .revenue-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid #bdcbd8;border-bottom:1px solid #bdcbd8}
+.site-v2.commercial-site .revenue-service-grid article{padding:26px 24px 28px 0;border-right:1px solid var(--stroke);min-width:0}
+.site-v2.commercial-site .revenue-service-grid article:not(:first-child){padding-left:25px}
+.site-v2.commercial-site .revenue-service-grid article:last-child{border-right:0}
+.site-v2.commercial-site .revenue-service-grid article>span{display:block;font-size:11px;color:var(--blue);font-weight:780;margin-bottom:27px}
+.site-v2.commercial-site .revenue-service-grid article h3{font-size:21px;line-height:1.23;margin:0 0 11px}
+.site-v2.commercial-site .revenue-service-grid article p{font-size:14px;margin:0;color:var(--soft)}
+.site-v2.commercial-site .revenue-services-note{margin:19px 0 0;font-size:13px;color:var(--soft)}
+/* Compact forms and meaningful CTA */
+.site-v2 .contact-section{background:#f4f7fa;padding:88px 0}
+.site-v2 .contact-copy h2{font-size:clamp(35px,3.7vw,50px)}
+.site-v2 .contact-copy p{color:#496070}
+.site-v2 .contact-card{background:#fff;border:1px solid #d6e0ea;box-shadow:none;border-radius:4px}
+.site-v2 .field label,.site-v2 .field legend{font-weight:690;color:#253b4d}
+.site-v2 .field input,.site-v2 .field textarea,.site-v2 .field select{border-radius:3px}
+.site-v2 .footer{background:#fff;border-top:1px solid var(--stroke)}
+.site-v2 .footer-inner{gap:24px}
+.site-v2 .footer-links a{color:#415a6b}
+/* Clear, compact navigation instead of oversized mobile menu typography */
+@media(max-width:1080px){
+  .site-v2 .desktop-nav{gap:16px}
+  .site-v2 .hero-layout,.site-v2.commercial-site .commercial-hero-grid{gap:42px}
+  .site-v2 .studio-about-layout{gap:48px}
+  .site-v2.commercial-site .commercial-two-col{gap:48px}
+}
+@media(max-width:830px){
+  .site-v2 .shell{width:calc(100% - 48px)}
+  .site-v2 .header-inner{min-height:66px;height:66px}
+  .site-v2 .mobile-toggle{display:flex}
+  .site-v2 .mobile-nav.is-open{padding:4px 24px 18px;background:#fff;box-shadow:0 12px 24px rgba(16,38,60,.07)}
+  .site-v2 .mobile-nav a{padding:12px 0;border-color:#e1e7ed;font-size:15px;line-height:1.4}
+  .site-v2 .mobile-nav .button{margin-top:15px;justify-content:center;color:#fff;padding:12px 16px;font-size:14px;min-height:42px}
+  .site-v2 .section{padding:68px 0}
+  .site-v2 .hero{padding:65px 0 69px}
+  .site-v2 .hero-layout,.site-v2.commercial-site .commercial-hero-grid{grid-template-columns:1fr;gap:32px}
+  .site-v2 .hero-main h1{font-size:clamp(49px,7.2vw,69px)}
+  .site-v2.commercial-site .commercial-hero{padding:65px 0 75px}
+  .site-v2.commercial-site .commercial-hero h1{font-size:clamp(49px,7.2vw,69px)}
+  .site-v2.commercial-site .commercial-two-col,.site-v2 .studio-about-layout{grid-template-columns:1fr;gap:22px}
+  .site-v2.commercial-site .commercial-explainer{padding-top:0}
+  .site-v2.commercial-site .commercial-case-grid{gap:30px}
+  .site-v2 .studio-about-body p{font-size:15px}
+  .site-v2.commercial-site .revenue-service-grid article{padding-right:18px}
+  .site-v2.commercial-site .revenue-service-grid article:not(:first-child){padding-left:18px}
+  .site-v2.commercial-site .revenue-service-grid article h3{font-size:18px}
+}
+@media(max-width:565px){
+  .site-v2 .shell{width:calc(100% - 36px)}
+  .site-v2 .section{padding:57px 0}
+  .site-v2 h2{font-size:clamp(32px,8.3vw,42px)}
+  .site-v2 .hero{padding:48px 0 60px}
+  .site-v2 .hero-main h1{font-size:clamp(44px,10.4vw,58px)}
+  .site-v2 .hero-summary,.site-v2.commercial-site .commercial-hero-desc{font-size:15px}
+  .site-v2 .hero-statement,.site-v2.commercial-site .commercial-hero-payoff{font-size:18px}
+  .site-v2 .hero-actions .button{width:100%}
+  .site-v2 .entry-panel{padding:24px}
+  .site-v2 .entry-panel h2{font-size:28px}
+  .site-v2 .problem-row{padding:20px 0}
+  .site-v2 .problem-row h3{font-size:18px}
+  .site-v2 .service-row{padding:22px 0}
+  .site-v2 .studio-about-layout{gap:20px}
+  .site-v2 .about-values{gap:6px}
+  .site-v2 .about-values span{font-size:11px}
+  .site-v2.commercial-site .commercial-hero{padding:51px 0 57px}
+  .site-v2.commercial-site .commercial-hero h1{font-size:clamp(44px,10.4vw,58px)}
+  .site-v2.commercial-site .commercial-hero-aside{padding:22px}
+  .site-v2.commercial-site .commercial-hero-row{padding:16px 0}
+  .site-v2.commercial-site .commercial-problems .problem-row p{font-size:13px}
+  .site-v2.commercial-site .outcome-line{padding:17px 0}
+  .site-v2.commercial-site .outcome-line h3{font-size:18px}
+  .site-v2.commercial-site .revenue-service-grid{grid-template-columns:1fr}
+  .site-v2.commercial-site .revenue-service-grid article,
+  .site-v2.commercial-site .revenue-service-grid article:not(:first-child){padding:19px 0;border-right:0;border-bottom:1px solid var(--stroke)}
+  .site-v2.commercial-site .revenue-service-grid article:last-child{border-bottom:0}
+  .site-v2.commercial-site .revenue-service-grid article>span{margin-bottom:10px}
+  .site-v2.commercial-site .revenue-service-grid article h3{font-size:20px}
+  .site-v2.commercial-site .commercial-case-demo{padding:20px 17px}
+  .site-v2.commercial-site [data-stage-panel] h4{font-size:22px}
+  .site-v2 .contact-section{padding:61px 0 72px}
+  .site-v2 .contact-card{padding:22px 18px}
+  .site-v2 .mobile-nav a{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){.site-v2 *,.site-v2 *:before,.site-v2 *:after{transition:none!important;scroll-behavior:auto!important}}
